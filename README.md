@@ -30,7 +30,7 @@ this, see the [How it works](#how-it-works) section.
 
 ## Examples
 
-You can see Quickstart in action on [spacy's installation docs](https://spacy.io/docs/usage).
+You can see Quickstart in action on [spaCy's installation docs](https://spacy.io/docs/usage).
 For a code example you can modify, see the [`example.html`](example.html) or
 check out [this demo on CodePen](https://codepen.io/ines/pen/OmobKq).
 
