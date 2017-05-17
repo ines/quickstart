@@ -22,7 +22,7 @@ relevant to them. This ended up becoming an annoying issue for us at
 [super lightweight](https://raw.githubusercontent.com/ines/quickstart/master/quickstart.min.js), easy to customise and will even build
 the form for you – if you want it to.
 
-**Quickstart was inspired by [Pytorch](http://pytorch.org)'s "Getting started"
+**Quickstart was inspired by [PyTorch](http://pytorch.org)'s "Getting started"
 widget. Its filtering functionality is based on a simple CSS rule, similar
 to [Jets.js](https://jets.js.org). This makes it fast and allows complex
 filtering rules with only one minimal DOM modification.** For more info on
@@ -100,7 +100,9 @@ Each command is a simple `<span>` with data attributes `data-qs-` plus the ID
 of the option group. For example, a command with `data-qs-os="windows"` will
 only be shown if the user has selected `windows` from the group `os`. If a
 command has more than one condition specified, it will only be shown if
-**all conditions are true**.
+**all conditions are true**. Note that Quickstart currently does not support
+adding multiple values per group. If a command is the same for both `mac` and
+`linux`, for example, you'll have to add it twice.
 
 ```html
 <div id="quickstart">
@@ -113,10 +115,6 @@ command has more than one condition specified, it will only be shown if
     <span data-qs-config="venv" data-qs-os="windows">.env\Scripts\activate</span>
 </div>
 ```
-
-Note that Quickstart currently does not support adding multiple values per group.
-If a command is the same for both `mac` and `linux`, for example, you'll have to
-add it twice.
 
 You can now **initialise the widget** with the selector of the container (in
 this case, `#quickstart` for `<div id="quickstart">`) and the array of option
