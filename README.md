@@ -3,7 +3,7 @@
 If you're publishing open-source software, you're probably familiar with this
 scenario: You want to make it easy for your users to download, install and
 use your library across operating systems and platforms, so you upload it to
-a variety of package mangers and provide detailed instructions and documentation.
+a variety of package managers and provide detailed instructions and documentation.
 
 But each package manager has its own, specific download command – sometimes even
 two. If you want to use a virtual environment, you need to add a few commands to
@@ -188,7 +188,7 @@ fetched, for example `[data-qs-model]:checked`, and combined into one expression
 > scrap the event listeners and other JavaScript logic. But this only works for
 > **siblings**, meaning that the inputs, labels and commands would all have to
 > live in the same container. This is inconvenient and very limiting, both in
-> terms of semantic and styling options.
+> terms of semantics and styling options.
 
 ## Using Quickstart with your own markup
 
