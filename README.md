@@ -19,7 +19,7 @@ time, keeping it simple for beginners or users who just want to install your
 software, and not sift through lengthy explanations that are not actually
 relevant to them. This ended up becoming an annoying issue for us at
 [spaCy](https://spacy.io), so I built [`quickstart.js`](quickstart.js). It's
-[super lightweight](quickstart.min.js), easy to customise and will even build
+[super lightweight](https://raw.githubusercontent.com/ines/quickstart/master/quickstart.min.js), easy to customise and will even build
 the form for you – if you want it to.
 
 **Quickstart was inspired by [Pytorch](http://pytorch.org)'s "Getting started"
