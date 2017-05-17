@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>quickstart.js example</title>
+        <meta charset="utf-8">
+        <!-- include the quickstart stylesheet -->
+        <link rel="stylesheet" href="quickstart.css">
+    </head>
+    <body>
+        <!-- the quickstart container -->
+        <div id="quickstart">
+            <span>pip install spacy</span>
+            <span data-qs-os="windows"># this is only shown for Windows users</span>
+            <span data-qs-os="windows" data-qs-python="2"># this is only shown for Windows users on Python 2</span>
+            <span data-qs-os="linux"># this is only shown for Linux users</span>
+            <span data-qs-config="venv" data-qs-python="2">python -m pip install -U virtualenv</span>
+            <span data-qs-config="venv" data-qs-python="3">python -m pip install -U venv</span>
+            <span data-qs-config="venv" data-qs-python="2">virtualenv .env</span>
+            <span data-qs-config="venv" data-qs-python="3">venv .env</span>
+            <span data-qs-config="venv" data-qs-os="mac">source .env/bin/activate</span>
+            <span data-qs-config="venv" data-qs-os="linux">source .env/bin/activate</span>
+            <span data-qs-config="venv" data-qs-os="windows">.env\Scripts\activate</span>
+        </div>
+
+        <!-- include quickstart.js -->
+        <script src="quickstart.js"></script>
+        <script>
+            // create your groups and options
+            var groups = [
+                { id: "os", title: "Operating system", options: [
+                    { id: "mac", title: "macOS / OSX", checked: true },
+                    { id: "windows", title: "Windows" },
+                    { id: "linux", title: "Linux" }]
+                },
+                { id: "python", title: "Python version", options: [
+                    { id: 2, title: "2.x" },
+                    { id: 3, title: "3.x", checked: true }]
+                },
+                { id: "config", title: "Configuration", multiple: true, options: [
+                    { id: "venv", title: "virtualenv" }]
+                }
+            ];
+
+            // initialise Quickstart with your container ID and groups
+            var qs = new Quickstart('#quickstart', groups);
+        </script>
+    </body>
+</html>
