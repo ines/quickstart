@@ -32,7 +32,7 @@ this, see the [How it works](#how-it-works) section.
 
 You can see Quickstart in action on [spacy's installation docs](https://spacy.io/docs/usage).
 For a code example you can modify, see the [`example.html`](example.html) or
-check out [this demo on CodePen](https://codepen.io/ines).
+check out [this demo on CodePen](https://codepen.io/ines/pen/230fac65b3fc732b4485c38d6a494228).
 
 ![Screenshot](https://cloud.githubusercontent.com/assets/13643239/26161117/4891b0e2-3b23-11e7-9a9d-965dd50f58e9.jpg)
 
