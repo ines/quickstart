@@ -1,5 +1,6 @@
 /**
  * quickstart.js
+ * A micro-form for user-specific installation instructions
  *
  * @author Ines Montani <ines@ines.io>
  * @version 0.0.1
