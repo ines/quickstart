@@ -191,7 +191,7 @@ fetched, for example `[data-qs-model]:checked`, and combined into one expression
 ## Using Quickstart with your own markup
 
 While Quickstart is able to generate the form markup and all required wrappers,
-you **don't have to** do it that way are free to use your own custom markup
+you **don't have to** do it that way and are free to use your own custom markup
 instead. This is especially useful if you want to apply your own classes and
 styling, or add more info to the form.
 
@@ -207,7 +207,7 @@ Here's an example of a very basic widget:
 <div id="quickstart" class="qs">
     <fieldset class="qs-group" data-qs-group="os">
         <legend class="qs-legend">Operating system</legend>
-        <input class="qs-input qs-input--radio" type="radio" name="os" id="mac" value="mac" checked="">
+        <input class="qs-input qs-input--radio" type="radio" name="os" id="mac" value="mac" checked>
         <label class="qs-label" for="mac">macOS / OSX</label>
 
         <input class="qs-input qs-input--radio" type="radio" name="os" id="windows" value="windows">
@@ -245,8 +245,8 @@ to the DOM are the  `data-qs-group` and `data-qs-results` attributes.**
 ## Styling Quickstart
 
 Quickstart comes with a very basic and minimal [stylesheet](quickstart.css).
-Under the hood, multi-select options are rendered as `<input type="checkbox"/>`,
-and single-select options as `<input type="radio"/>`. By default, they're hidden,
+Under the hood, multi-select options are rendered as `<input type="checkbox">`,
+and single-select options as `<input type="radio">`. By default, they're hidden,
 with custom styles applied to the `<label>` **following a checked input** and
 its `:before` pseudo-element. This creates the illusion of styled radio buttons
 and checkboxes. If you're letting Quickstart generate the markup for you, it'll
